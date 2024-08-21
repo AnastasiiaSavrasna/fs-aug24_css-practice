@@ -1,1 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
 
+.people {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 16px;
+  justify-content: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: 1s;
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 231px;
+  border-radius: 200px;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.person:hover {
+  transform: 1s;
+}
+
+.person:hover {
+  transform: 1s;
+}
+
+.rank {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #000;
+  color: #fff;
+  padding: 4px 8px;
+}
+
+.details {
+  padding: 16px;
+}
+
+.name {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.extra {
+  font-size: 14px;
+  color: #666;
+}
+
+.sport,
+.pay {
+  display: block;
+}
+
+@media (min-width: 500px) {
+  .people {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .people {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
