@@ -1,0 +1,84 @@
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.people {
+  grid-gap: 16px;
+  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-content: center;
+  padding: 16px;
+  display: grid;
+}
+
+.person {
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.photo {
+  object-fit: cover;
+  border-radius: 200px;
+  width: 200px;
+  height: 231px;
+  transition: all 1s;
+  position: relative;
+  overflow: hidden;
+}
+
+.person:hover {
+  transform: 1s;
+  transform: 1s;
+}
+
+.rank {
+  color: #fff;
+  background: #000;
+  padding: 4px 8px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.details {
+  padding: 16px;
+}
+
+.name {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+.extra {
+  color: #666;
+  font-size: 14px;
+}
+
+.sport, .pay {
+  display: block;
+}
+
+@media (width >= 500px) {
+  .people {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 1000px) {
+  .people {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*# sourceMappingURL=index.b1276d39.css.map */
